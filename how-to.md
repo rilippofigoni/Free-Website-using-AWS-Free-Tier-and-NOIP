@@ -26,13 +26,31 @@
   vi /var/www/html/mypage.html
   ```
 
-* **view the page in browser**
+* for example page you can use this code
   
-  http://ec2-3-142-147-5.us-east-2.compute.amazonaws.com/mypage.html
+  ```html
+  <html>
+  
+  <head>
+  
+  <title>My example page</title>
+  
+  </head>
+  
+  <body>
+  
+  This is my personal website!
+  
+  </body>
+  
+  </html>
+  ```
 
+* Verify your web page on browser
+
+* http://ec2-3-142-147-5.us-east-2.compute.amazonaws.com/mypage.html
 
 * **Register free sub domain at http://noip.com and configure your DDNS router server**
-
 
 * **Enable extra packages for enterprise linux(epel) repository and install noip**
   
@@ -47,16 +65,15 @@
   ```
 
 * **create noip configuration – enter noip username and password**
-
+  
   ```bash
   noip -C
   ```
 
-
 * **Start the noip service**
-
+  
   ```bash
-  sudo system start noip
+  sudo systemctl start noip
   ```
 
 After a minute verify the IP change and check the page with the new domain url
