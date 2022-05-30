@@ -67,7 +67,7 @@
 * **create noip configuration – enter noip username and password**
   
   ```bash
-  noip -C
+  noip2 -C
   ```
 
 * **Start the noip service**
