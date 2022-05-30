@@ -11,7 +11,7 @@
 * **Install apache http server**
   
   ```bash
-  sudo yum update -y
+  sudo yum install httpd
   ```
 
 * **Start http server**
